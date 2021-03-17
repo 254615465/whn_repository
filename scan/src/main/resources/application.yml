@@ -1,0 +1,10 @@
+scan:
+   Serial_RS232: COM3:115200
+   TCPClient: 192.168.1.168:8160
+   Serial_RS485: COM9:115200:1
+spring:
+  devtools:
+    restart:
+      additional-paths: src/main/java  #设置重启的目录
+      enabled: true     #热部署生效
+      exclude: WEB-INF/**  #classpath目录下的WEB-INF文件夹内容修改不重启
